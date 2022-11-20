@@ -144,7 +144,20 @@ app.get("/grades",(req,res)=>{
                 maseege:'Trace deleted'
             })
             })
-    
+                //search 
+
+            app.get("trace/:title",(req,res)=>{
+                const search= req.params as ITACE
+                const updatdedlist = req.params.title
+                for(let i=0 ;i<trace.length;i++)
+                if(trace[i].ID===updatdedlist){
+                    trace[i]=search
+                }}
+                
+                )
+
+
+
 
 
 
